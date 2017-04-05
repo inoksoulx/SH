@@ -24,8 +24,8 @@ var times = {
 
 function lost(time, cb){
   for (var i = 0; i < time; i++) {
-    var resurl = 'https://www.spamhaus.org/query/ip/' + ip[i] + "" + i;
-    console.log(resurl);
+    var resurl = 'https://www.spamhaus.org/query/ip/' + ip[i];
+    window.open(resurl);
   }
   cb(time);
 }
